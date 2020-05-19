@@ -1,5 +1,16 @@
 module.exports = {
-    devServer: {
-        port: 8081
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'views': '@/views',
+        'components': '@/components',
+        'network': '@/network',
+        'common': '@/common',
+        'assets': '@/assets',
+      }
     }
+  },
+  devServer: {
+    port: 8081
+  }
 }
